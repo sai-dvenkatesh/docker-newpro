@@ -1,0 +1,3 @@
+2019/06/04 13:26:51 [error] 5#5: *13 open() "/var/www/html/favicon.ico" failed (2: No such file or directory), client: 192.168.100.109, server: nginx, request: "GET /favicon.ico HTTP/1.1", host: "192.168.100.21", referrer: "https://192.168.100.21/"
+2019/06/04 13:40:12 [error] 5#5: *29 open() "/var/www/html/ap1" failed (2: No such file or directory), client: 127.0.0.1, server: nginx, request: "GET /ap1 HTTP/1.1", host: "localhost"
+2019/06/04 13:40:38 [error] 5#5: *30 open() "/var/www/html/ap1" failed (2: No such file or directory), client: 127.0.0.1, server: nginx, request: "GET /ap1 HTTP/1.1", host: "localhost"

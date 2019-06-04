@@ -1,0 +1,32 @@
+version: '2'
+services:
+  nginx:
+    image: nginx
+    restart: always
+    volumes:
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf
+      - ./nginx/host.conf:/etc/nginx/conf.d/default.conf
+      - ./logs/nginx:/var/log/nginx
+      - ./web:/var/www/html
+      - ./ssl:/etc/ssl/certs/
+    ports:
+      - '443:443'
+      - '80:80'
+  app1:
+    hostname: app1
+    build: ./app1
+    image: app1:1.0
+    ports:
+      - '9090:9090'
+  app2:
+    hostname: app2
+    build: ./app2
+    image: app2:1.0
+    ports:
+      - '9060:9060'
+volumes:
+  nginx:
+  logs:
+  web:
+  ssl:
+        
