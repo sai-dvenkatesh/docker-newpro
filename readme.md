@@ -5,7 +5,8 @@ step-1:
  git clone https://github.com/sai-dvenkatesh/docker-newpro.git 
 
 step-2:
- cd docker-newpro
+ cd docker-newpro 
+ 
  step-3:
  docker-compose up -d --build
 
