@@ -6,7 +6,7 @@ step-1:
 
 step-2:
  cd docker-newpro
-step-3:
+ step-3:
  docker-compose up -d --build
 
 verify:
