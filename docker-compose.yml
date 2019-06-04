@@ -17,13 +17,13 @@ services:
     build: ./app1
     image: app1:1.0
     ports:
-      - '9090:9090'
+      - '8080:8080'
   app2:
     hostname: app2
     build: ./app2
     image: app2:1.0
     ports:
-      - '9060:9060'
+      - '8081:8081'
 volumes:
   nginx:
   logs:
