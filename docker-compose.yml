@@ -6,7 +6,7 @@ services:
     volumes:
       - ./nginx/nginx.conf:/etc/nginx/nginx.conf
       - ./nginx/host.conf:/etc/nginx/conf.d/default.conf
-      - ./logs/nginx:/var/log/nginx
+      - ./logs:/var/log/nginx
       - ./web:/var/www/html
       - ./ssl:/etc/ssl/certs/
     ports:
